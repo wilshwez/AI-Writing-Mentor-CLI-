@@ -15,14 +15,14 @@ writing techniques, and generate full book outlines.
 ```text
 ai_writer/
 │
-├── app.py           
-├── writer.py         
-├── config.py           
-├── prompts.py         
-├── requirements.txt      
-├── .env.example          
-├── .gitignore             
-├── LICENSE                  
+├── app.py            # CLI entry point (interactive + headless modes)
+├── writer.py          # ArthurWriter class - wraps the Groq API
+├── config.py           # Loads & validates environment variables
+├── prompts.py           # Arthur's system prompt + prompt templates
+├── requirements.txt      # Python dependencies
+├── .env.example           # Template for your API key (copy to .env)
+├── .gitignore               # Excludes .env, __pycache__, venv, etc.
+├── LICENSE                   # MIT License
 └── README.md
 ```
 
